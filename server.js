@@ -121,7 +121,7 @@ app.post('/api/file/upload/picture', requireAuth, (req, res, next) => {
              return;
         }
 
-        const url = url+'/api/file/'+req.file.filename;
+        const url = box_url+'/api/file/'+req.file.filename;
         const id  = req.file.id;
 
         res.status(201).json({

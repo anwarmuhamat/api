@@ -7,7 +7,7 @@ const ROLE_OWNER = require('../constants').ROLE_OWNER;
 const ROLE_ADMIN = require('../constants').ROLE_ADMIN;
 
 const Schema = mongoose.Schema;
-const box_url = 'http://139.59.103.121:3000';
+const box_url = 'http://35.201.139.199:3000';
 
 // User Schema
 const UserSchema = new Schema({

@@ -49,11 +49,11 @@ const UserSchema = new Schema({
     picture: {
       id: {
         type: String,
-        default: '593247008d4926360077938e'
+        default: '59d1fe3c244a0561608f280c'
       },
       url: {
         type: String,
-        default: box_url+'/api/file/59d1f9d0576f0360e3ba83ec1506933532887.jpg'
+        default: box_url+'/api/file/59d1fddc244a0561608f280a1506934332160.jpg'
       }
     }
   },

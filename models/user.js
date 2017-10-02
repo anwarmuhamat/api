@@ -7,6 +7,7 @@ const ROLE_OWNER = require('../constants').ROLE_OWNER;
 const ROLE_ADMIN = require('../constants').ROLE_ADMIN;
 
 const Schema = mongoose.Schema;
+const box_url = 'http://139.59.103.121:3000';
 
 // User Schema
 const UserSchema = new Schema({
@@ -52,7 +53,7 @@ const UserSchema = new Schema({
       },
       url: {
         type: String,
-        default: 'http://139.59.103.121:3000/api/file/5932469241aa6235e5f4e6bb1496467200235.png'
+        default: box_url+'/api/file/5932469241aa6235e5f4e6bb1496467200235.png'
       }
     }
   },

@@ -1,4 +1,4 @@
-image: node-api:latest
+image: node:latest
 
 stages:
   - build
@@ -7,4 +7,4 @@ stages:
 run_server:
   stage: build
   script:
-    - pm2 start server.js
+    - node server.js

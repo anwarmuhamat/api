@@ -23,7 +23,7 @@ const GridFsStorage = require('multer-gridfs-storage');
 const Grid          = require('gridfs-stream');
 Grid.mongo          = mongoose.mongo;
 const gfs           = Grid(conn.db);
-const url           = 'http://35.201.139.199:3000';
+const box_url           = 'http://35.201.139.199:3000';
 
 // Middleware to require login/auth
 const requireAuth   = passport.authenticate('jwt', { session: false });
@@ -89,7 +89,7 @@ app.post('/api/file/upload/changeuserpicture', requireAuth, (req, res, next) => 
             return next(err);
           }
 
-          user.profile.picture.url = url+'/api/file/'+req.file.filename;
+          user.profile.picture.url = box_url+'/api/file/'+req.file.filename;
           user.profile.picture.id  = req.file.id;
 
           user.save((err, user) => {

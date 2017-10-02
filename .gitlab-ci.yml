@@ -1,0 +1,10 @@
+image: node:latest
+
+stages:
+  - build
+  - test
+  
+run_server:
+  stage: build
+  script:
+    - pm2 start server.js

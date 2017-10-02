@@ -2,9 +2,15 @@ image: node:latest
 
 stages:
   - build
-  - test
-  
-run_server:
+
+cache:
+  paths:
+    - node_modules/
+
+install_dependencies:
   stage: build
   script:
-    - node server.js
+    - npm install
+  artifacts:
+    paths:
+      - node_modules/

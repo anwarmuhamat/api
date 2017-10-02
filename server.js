@@ -23,7 +23,7 @@ const GridFsStorage = require('multer-gridfs-storage');
 const Grid          = require('gridfs-stream');
 Grid.mongo          = mongoose.mongo;
 const gfs           = Grid(conn.db);
-const box_url           = 'http://35.201.139.199:3000';
+const box_url           = 'http://35.201.139.199';
 
 // Middleware to require login/auth
 const requireAuth   = passport.authenticate('jwt', { session: false });

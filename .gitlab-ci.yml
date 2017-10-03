@@ -8,7 +8,5 @@ before_script:
 
 buildJob:
   stage: build
-  tags:
-    - docker
   script:
     - docker-compose --version

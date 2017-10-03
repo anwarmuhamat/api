@@ -1,4 +1,4 @@
-image: docker:latest
+image: nodeapi_api:lates
 
 stages:
 - build
@@ -6,6 +6,7 @@ stages:
 update_docker_image:
   stage: build
   script:
-    - ls
+    - cd app
+    -ls
   only:
     - master

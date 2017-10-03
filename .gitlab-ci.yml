@@ -1,4 +1,4 @@
-image: docker:lattes
+image: docker:latest
 
 stages:
 - build

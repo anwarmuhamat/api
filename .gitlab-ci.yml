@@ -7,6 +7,6 @@ update_docker_image:
   stage: build
   script:
     - cd app
-    -ls
+    - ls
   only:
     - master

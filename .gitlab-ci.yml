@@ -5,7 +5,5 @@ build_docker_image:
   stage: build
   script:
     - docker info
-  tags:
-    - docker
   only:
     - master

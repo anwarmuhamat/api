@@ -6,6 +6,6 @@ stages:
 build_docker_image:
   stage: build
   script:
-    - docker info
+    - ls
   only:
     - master

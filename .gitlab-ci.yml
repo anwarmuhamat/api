@@ -1,4 +1,4 @@
-image: nodeapi_api:lates
+image: nodeapi_api:lattes
 
 stages:
 - build

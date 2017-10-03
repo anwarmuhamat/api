@@ -1,2 +1,8 @@
 # Nginx config
 nginx.conf
+
+#################
+## Directories
+#################
+
+node_modules/

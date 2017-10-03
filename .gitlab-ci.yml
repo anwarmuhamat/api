@@ -1,12 +1,16 @@
 image: nodeapi_api:latest
 
+stages:
+  - build
+  - test
+  
 services:
   - docker:dind
 
 before_script:
   - docker info
 
-buildJob:
-  stage: build
+test_docker:
+  stage: test
   script:
     - docker-compose --version

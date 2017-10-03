@@ -1,5 +1,11 @@
-job_deploy:
-  stage: deploy
-  tags: deployApiServer
+image: nodeapi_api:latest
+
+stages:
+- build
+
+update_docker_image:
+  stage: build
   script:
-    -  npm install
+    - cd app
+    - ls
+

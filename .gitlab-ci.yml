@@ -1,12 +1,5 @@
-image: nodeapi_api:latest
-
-stages:
-- build
-
-update_docker_image:
-  stage: build
+job_deploy:
+  stage: deploy
+  tags: deployApiServer
   script:
-    - cd app
-    - ls
-  only:
-    - master
+    -  npm install

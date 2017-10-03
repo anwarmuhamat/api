@@ -1,16 +1,14 @@
 image: nodeapi_api:latest
 
-stages:
-  - build
+services:
+  - docker:dind
 
-cache:
-  paths:
-    - node_modules/
+before_script:
+  - docker info
 
-install_dependencies:
+buildJob:
   stage: build
+  tags:
+    - docker
   script:
-    - npm install
-  artifacts:
-    paths:
-      - node_modules/
+    - docker-compose --version

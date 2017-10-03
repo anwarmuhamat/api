@@ -1,7 +1,11 @@
 image: docker:latest
 
-git_pull:
+stages:
+- build
+
+update_docker_image:
+  stage: build
   script:
-    - git pull
+    - ls
   only:
     - master
